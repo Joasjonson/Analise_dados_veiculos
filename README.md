@@ -39,6 +39,7 @@ As análises realizadas geraram insights que podem ajudar a sociedade de diversa
 - Python
 - Pandas
 - Matplotlib
+- SQL
 
 ## Conclusão
 
