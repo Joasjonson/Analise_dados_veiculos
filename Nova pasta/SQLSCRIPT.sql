@@ -94,18 +94,18 @@ FROM CTE_RouboVeiculos;
 
 /*OUTPUT>
 ANO		MES			QTD ROUBOS/MES				 MES ANTERIOR				VARIAÇÃO MES
-2023		1					183				NULL						0 
-2023		2					855				183							AUMENTO EM  367,21% DOS CASOS
-2023		3					70				855							QUEDA EM  -91,81% DOS CASOS
-2023		4					61				70							QUEDA EM  -12,86% DOS CASOS
-2023		5					68				61							AUMENTO EM  11,48% DOS CASOS
-2023		6					53				68							QUEDA EM  -22,06% DOS CASOS
-2023		7					61				53							AUMENTO EM  15,09% DOS CASOS
-2023		8					70				61							AUMENTO EM  14,75% DOS CASOS
-2023		9					64				70							QUEDA EM  -8,57% DOS CASOS
-2023		10					70				64							AUMENTO EM  9,38% DOS CASOS
-2023		11					64				70							QUEDA EM  -8,57% DOS CASOS
-2023		12					41				64							QUEDA EM  -35,94% DOS CASOS
+2023		1					183				NULL				0 
+2023		2					855				183					AUMENTO EM  367,21% DOS CASOS
+2023		3					70				855					QUEDA EM  -91,81% DOS CASOS
+2023		4					61				70					QUEDA EM  -12,86% DOS CASOS
+2023		5					68				61					AUMENTO EM  11,48% DOS CASOS
+2023		6					53				68					QUEDA EM  -22,06% DOS CASOS
+2023		7					61				53					AUMENTO EM  15,09% DOS CASOS
+2023		8					70				61					AUMENTO EM  14,75% DOS CASOS
+2023		9					64				70					QUEDA EM  -8,57% DOS CASOS
+2023		10					70				64					AUMENTO EM  9,38% DOS CASOS
+2023		11					64				70					QUEDA EM  -8,57% DOS CASOS
+2023		12					41				64					QUEDA EM  -35,94% DOS CASOS
 */
 
 
@@ -122,13 +122,13 @@ ORDER BY 'QTD ROUBOS' DESC
 
 /*OUTPUT>
 DIA DA SEMANA		QTD ROUBOS		%  DIA
-Quinta-Feira			333			19.55
-Segunda-Feira			288			16.91
-Domingo					255			14.97
-Sábado					227			13.33
-Terça-Feira				216			12.68
-Quarta-Feira			202			11.86
-Sexta-Feira				182			10.69
+Quinta-Feira		333			19.55
+Segunda-Feira		288			16.91
+Domingo				255			14.97
+Sábado				227			13.33
+Terça-Feira			216			12.68
+Quarta-Feira		202			11.86
+Sexta-Feira			182			10.69
 */
 
 
