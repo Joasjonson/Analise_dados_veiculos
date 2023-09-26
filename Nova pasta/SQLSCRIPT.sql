@@ -7,7 +7,7 @@ FROM RouboVeiculos
 GROUP BY NUM_BO
 HAVING COUNT(*) > 1;
 
-				**** ANALISES****
+				**** ANALISES ****
 
 
 -- QTD ROUBOS POR BAIRRO E % DE CADA BAIRRO (TOP 10)
@@ -50,7 +50,7 @@ WHERE CIDADE IS NOT NULL
 GROUP BY CIDADE
 
 /*OUTPUT>
-RANK		CIDADE				QTD ROUBOS/CIDADE	TOTAL_ROUBOS			% POR CIDADE
+RANK		CIDADE				QTD ROUBOS/CIDADE	TOTAL_ROUBOS		% POR CIDADE
 1		S.PAULO					742			1703		43,57 %
 2		S.ANDRE					97			1703		5,70 %
 3		CAMPINAS				92			1703		5,40 %
@@ -194,11 +194,11 @@ WHERE DESCRICAOLOCAL IS NOT NULL
 GROUP BY DESCRICAOLOCAL
 ORDER BY QTD_ROUBOS DESC
 
-/*OUTOUT>
+/*OUTPUT>
 DESCRICAOLOCAL					QTD_ROUBOS		PORCENTAGEM
 Via pública						1433		84.54%
 Veículo em movimento					104			6.14%
-Garagem ou abrigo de residência					42			2.48%
+Garagem ou abrigo de residência				42			2.48%
 Outros							31			1.83%
 Rodovia/Estrada						18			1.06%
 Estacionamento particular				16			0.94%
@@ -239,16 +239,16 @@ ORDER BY QTD_ROUBOS DESC
 
 /*OUTPUT>
 DESCR_COR_VEICULO		QTD_ROUBOS	TOTAL_ROUBOS			%
-Branco						377				1703			22.14%
-Preta						354				1703			20.79%
-Prata						282				1703			16.56%
-Vermelho					246				1703			14.45%
-Cinza						215				1703			12.62%
-Azul						131				1703			7.69%
-Verde						34				1703			2.00%
-Amarelo						17				1703			1.00%
-Marrom						14				1703			0.82%
-Laranja						10				1703			0.59%
+Branco					377			1703		22.14%
+Preta					354			1703		20.79%
+Prata					282			1703		16.56%
+Vermelho				246			1703		14.45%
+Cinza					215			1703		12.62%
+Azul					131			1703		7.69%
+Verde					34			1703		2.00%
+Amarelo					17			1703		1.00%
+Marrom					14			1703		0.82%
+Laranja					10			1703		0.59%
 */
 
 
@@ -275,7 +275,7 @@ ORDER BY RANK;
 /*OUTPUT>
 DELEGACIA_NOME				QTD_ROUBOS	RANK
 DELEGACIA ELETRONICA			879			1
-49º D.P. SAO MATEUS				39			2
+49º D.P. SAO MATEUS			39			2
 DELEGACIA ELETRONICA 3			27			3
 PLANTÃO - 01 DP CAMPINAS		26			4
 101º D.P. JDIM IMBUIAS			26			4
@@ -307,10 +307,10 @@ FROM AnaliseResolucao
 ORDER BY QTD_ROUBOS DESC;
 
 /*OUTPUT>
-SOLUCAO							QTD_ROUBOS			%
+SOLUCAO							QTD_ROUBOS		%
 BO PARA INVESTIGAÇÃO					1025		62,05
-ENCAMINHAMENTO DP ÁREA DO FATO			349			21,13
-APRECIAÇÃO DO DELEGADO TITULAR			179			10,84
+ENCAMINHAMENTO DP ÁREA DO FATO				349			21,13
+APRECIAÇÃO DO DELEGADO TITULAR				179			10,84
 BO PARA REGISTRO						74			4,48
 BO PARA FLAGRANTE						25			1,51
 */
