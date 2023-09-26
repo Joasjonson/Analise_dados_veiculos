@@ -95,17 +95,17 @@ FROM CTE_RouboVeiculos;
 /*OUTPUT>
 ANO		MES			QTD ROUBOS/MES				 MES ANTERIOR				VARIAÇÃO MES
 2023		1					183				NULL				0 
-2023		2					855				183					AUMENTO EM  367,21% DOS CASOS
-2023		3					70				855					QUEDA EM  -91,81% DOS CASOS
-2023		4					61				70					QUEDA EM  -12,86% DOS CASOS
-2023		5					68				61					AUMENTO EM  11,48% DOS CASOS
-2023		6					53				68					QUEDA EM  -22,06% DOS CASOS
-2023		7					61				53					AUMENTO EM  15,09% DOS CASOS
-2023		8					70				61					AUMENTO EM  14,75% DOS CASOS
-2023		9					64				70					QUEDA EM  -8,57% DOS CASOS
-2023		10					70				64					AUMENTO EM  9,38% DOS CASOS
-2023		11					64				70					QUEDA EM  -8,57% DOS CASOS
-2023		12					41				64					QUEDA EM  -35,94% DOS CASOS
+2023		2					855				183				AUMENTO EM  367,21% DOS CASOS
+2023		3					70				855				QUEDA EM  -91,81% DOS CASOS
+2023		4					61				70				QUEDA EM  -12,86% DOS CASOS
+2023		5					68				61				AUMENTO EM  11,48% DOS CASOS
+2023		6					53				68				QUEDA EM  -22,06% DOS CASOS
+2023		7					61				53				AUMENTO EM  15,09% DOS CASOS
+2023		8					70				61				AUMENTO EM  14,75% DOS CASOS
+2023		9					64				70				QUEDA EM  -8,57% DOS CASOS
+2023		10					70				64				AUMENTO EM  9,38% DOS CASOS
+2023		11					64				70				QUEDA EM  -8,57% DOS CASOS
+2023		12					41				64				QUEDA EM  -35,94% DOS CASOS
 */
 
 
@@ -124,11 +124,11 @@ ORDER BY 'QTD ROUBOS' DESC
 DIA DA SEMANA		QTD ROUBOS		%  DIA
 Quinta-Feira		333			19.55
 Segunda-Feira		288			16.91
-Domingo				255			14.97
-Sábado				227			13.33
-Terça-Feira			216			12.68
+Domingo			255			14.97
+Sábado			227			13.33
+Terça-Feira		216			12.68
 Quarta-Feira		202			11.86
-Sexta-Feira			182			10.69
+Sexta-Feira		182			10.69
 */
 
 
@@ -170,15 +170,15 @@ ORDER BY QTD_ROUBOS DESC;
 /*OUTPUT>
 MARCA		MODELO			QTD_ROUBOS
 HONDA		CG 160 FAN			90
-HONDA		CG 160 TITAN		55
-HONDA		CG 160 START		32
+HONDA		CG 160 TITAN			55
+HONDA		CG 160 START			32
 YAMAHA		FZ25 FAZER			27
 HONDA		XRE 300				21
-YAMAHA		XTZ250 LANDER		15
-HONDA		CB 250F TWISTER		14
+YAMAHA		XTZ250 LANDER			15
+HONDA		CB 250F TWISTER			14
 HONDA		CB 300R				13
-HONDA		CG150 FAN ESDI		13
-NISSAN		KICKS S DRCT CVT	11
+HONDA		CG150 FAN ESDI			13
+NISSAN		KICKS S DRCT CVT		11
 */
 
 
@@ -196,16 +196,16 @@ ORDER BY QTD_ROUBOS DESC
 
 /*OUTOUT>
 DESCRICAOLOCAL					QTD_ROUBOS		PORCENTAGEM
-Via pública							1433		84.54%
-Veículo em movimento				104			6.14%
-Garagem ou abrigo de residência		42			2.48%
-Outros								31			1.83%
+Via pública						1433		84.54%
+Veículo em movimento					104			6.14%
+Garagem ou abrigo de residência					42			2.48%
+Outros							31			1.83%
 Rodovia/Estrada						18			1.06%
-Estacionamento particular			16			0.94%
-Residência							13			0.77%
+Estacionamento particular				16			0.94%
+Residência						13			0.77%
 Comércio e serviços					11			0.65%
-Estacionamento público				9			0.53%
-Estacionamento com vigilância		6			0.35%
+Estacionamento público					9			0.53%
+Estacionamento com vigilância				6			0.35%
 */
 
 
@@ -220,8 +220,8 @@ FROM RouboVeiculos
 GROUP BY FLAGRANTE
 
 /*OUTPUT>
-FLAGRANTE	QTD_ROUBO	PORCENTAGEM
-Sim			27				1.59%
+FLAGRANTE	QTD_ROUBO		PORCENTAGEM
+Sim			27			1.59%
 Não			1676			98.41%
 */
 
