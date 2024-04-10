@@ -1,0 +1,18 @@
+
+
+# Ignorar arquivos de compilação Python
+*.pyc
+
+# Ignorar o diretório de arquivos de cache
+__pycache__/
+
+# Ignorar o arquivo de configuração local
+config.ini
+
+.ipynb_checkpoints/
+
+venv/
+
+
+
+
